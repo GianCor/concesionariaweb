@@ -26,6 +26,39 @@ body {
   margin: auto;
 }
 
+.store-wrapper{
+  padding-top: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.category_list{
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  height: 100%;
+}
+
+.category_list a{
+  border-radius: 20px;
+}
+
+.product-item{
+  overflow: hidden;
+}
+
+.product-item a{
+  z-index: 100;
+}
+
+.product-item img{
+  transition: all ease-in-out 0.3s;
+}
+
+.product-item img:hover{
+  transform: scale(1.1);
+}
+
 .btn {
   display: inline-block;
   padding: 0.5em 1.5em;
