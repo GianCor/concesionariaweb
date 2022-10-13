@@ -488,6 +488,12 @@ body {
     opacity: 0.95;
   }
 
+  .logo {
+    position: absolute;
+    top: 06px;
+    right: 15px;
+  }
+
   .showcase-container{
     height: 70vh;
     margin-left: 10px;
