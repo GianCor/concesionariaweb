@@ -213,6 +213,8 @@ body {
 .about-wrapper {
   display: flex;
   flex-wrap: wrap;
+  box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+
 }
 
 #about h2 {
@@ -327,6 +329,8 @@ body {
   z-index: 1;
   border-radius: 20px;
   transform: scaleY(0);
+  box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+  filter: blur(1.5px);
   transform-origin: 100% 100%;
   transition: all 0.3s ease-in-out;
 }
@@ -362,9 +366,9 @@ body {
   grid-template-rows: 1fr; 
   gap: 5px 5px; 
   height: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
 } 
 
 .mapa-info{
@@ -401,6 +405,7 @@ body {
 .contact-container {
   display: flex;
   background: #fff;
+  box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 .contact-img {
@@ -626,7 +631,7 @@ body {
   /* ......./ motos /......... */
 
   #motos{
-    height: 165vh;
+    padding-bottom: 200%;
   }
 
   .motos-container {
@@ -667,7 +672,9 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: stretch;
+    width: 90vw;
   }
+  
 
   .food-menu-container img {
     margin: auto;
@@ -679,7 +686,7 @@ body {
   }
 
   .form-container {
-    width: 90%;
+    width: 80vw;
   }
 
   .contact-container {
@@ -703,6 +710,8 @@ body {
     font-size: 1.8rem;
     font-weight: 500;
   }
+
+
 }
 
 @media (min-width: 769px) and (max-width: 1210px) {
@@ -731,7 +740,7 @@ body {
 
 
 .wrap{
-	max-width: 1100px;
+	max-width: 100vw;
 	width: 90%;
 	margin: auto;
 }
@@ -774,6 +783,7 @@ body {
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
+  box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.22);
 }
 
 .category_list .ct_item-active{
@@ -794,6 +804,40 @@ body {
 	width: 82%;
 	display: flex;
 	flex-wrap: wrap;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 87vh;
+}
+
+/* Tamaño del scroll */
+.products-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+ /* Estilos barra (thumb) de scroll */
+.products-list::-webkit-scrollbar-thumb {
+  background: #155f4e81;
+  border-radius: 4px;
+}
+
+.products-list::-webkit-scrollbar-thumb:active {
+  background-color: #155f4e;
+}
+
+.products-list::-webkit-scrollbar-thumb:hover {
+  background: #155f4e;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+ /* Estilos track de scroll */
+.products-list::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+.products-list::-webkit-scrollbar-track:hover, 
+.products-list::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
 }
 
 
@@ -882,7 +926,7 @@ body {
 	}
 
 	.products-list .product-item:nth-child(2n+1){
-		margin-left: 0px;
+		margin-left: 0%;
 	}
 
 }
