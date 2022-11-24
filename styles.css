@@ -123,14 +123,14 @@ body {
   
   .menu-items a {
 	text-decoration: none;
-	color: rgb(167, 167, 167);
+	color: rgb(236, 236, 236);
 	font-weight: 500;
-	transition: color 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
   }
   
   .menu-items a:hover {
 	color: #ffffff;
-	transition: color 0.3s ease-in-out;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff
   }
   
   .menu-items li:hover{
@@ -256,11 +256,22 @@ body {
   border-radius: 20px;
 }
 
+/* ..........////in-between///........... */
+
+.in-between-container{
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(Assets/Motociclistas.png);
+  background-attachment: fixed;
+}
+
 /* ..........////motos///........... */
 
 #motos {
   padding: 5rem 0 10rem 0;
-  height: 100vh;
+  height: 70vh;
 }
 
 #motos h2 {
@@ -627,7 +638,6 @@ body {
     height: 100%;
     width: 100%;
   }
-
   /* ......./ motos /......... */
 
   #motos{
@@ -666,6 +676,11 @@ body {
 
   .navbar .menu-items li{
       font-size: 1.6rem;
+  }
+
+  .in-between-container{
+    height: 200px;
+    margin-top: 100px;
   }
 
   .mapa-info-container {
