@@ -674,6 +674,10 @@ body {
     align-items: stretch;
     width: 90vw;
   }
+
+  .mapouter{
+    width: 90vw !important
+  }
   
 
   .food-menu-container img {
@@ -710,8 +714,7 @@ body {
     font-size: 1.8rem;
     font-weight: 500;
   }
-
-
+  
 }
 
 @media (min-width: 769px) and (max-width: 1210px) {
