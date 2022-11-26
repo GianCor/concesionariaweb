@@ -50,23 +50,20 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="showcase-container first-page">
-              <h1 class="main-title" id="home">Financiamos con DNI</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="#food-menu" class="btn btn-primary">Ver más</a>
+              <img class="desktop-img" src="assets/prueba.png">
+              <img class="mobile-img" src="assets/010.png">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="showcase-container second-page">
-              <h1 class="main-title" id="home">Imagen 2</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="#food-menu" class="btn btn-primary">Ver más</a>
+              <img class="desktop-img" src="assets/Imagen 2.png">
+              <img class="mobile-img" src="assets/010.png">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="showcase-container second-page">
-              <h1 class="main-title" id="home">Imagen 3</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="#food-menu" class="btn btn-primary">Ver más</a>
+              <img class="desktop-img" src="assets/Imagen 3.png">
+              <img class="mobile-img" src="assets/010.png">
             </div>
           </div>
         </div>
@@ -89,7 +86,7 @@
           </p>
         </div>
         <div data-aos="fade-left" data-aos-delay="1400" class="about-img">
-          <img src="Assets/Motociclista.png" alt="Motociclista" />
+          <img src="Assets/team copia.jpg" alt="Motociclista" />
         </div>
       </div>
     </section>
@@ -169,7 +166,12 @@
     <section id="contact">
       <div data-aos="zoom-out" class="contact-container container">
         <div class="contact-img">
-          <img src="Assets/Rasd.jfif" alt="" />
+          <img src="Assets/email.jpg" alt="" />
+          <div class="social-media-container">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5493794901165&text=Necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20empresa."><img class="social-media-img" src="Assets/whatsapp.png"></a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100086361611958"><img class="social-media-img" src="Assets/facebook.png"></a>
+            <a target="_blank" href="https://www.instagram.com/crecer_srl/"><img class="social-media-img" src="Assets/instagram.png"></a>
+          </div>
         </div>
 
         <div class="form-container">
@@ -213,11 +215,7 @@
             {
               scrollTop: $(hash).offset().top,
             },
-            800,
-            function () {
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            }
+            800
           );
         } // End if
       });
