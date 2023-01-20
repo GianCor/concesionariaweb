@@ -37,7 +37,7 @@
         <ul class="menu-items">
           <li><a href="index.html#showcase">Inicio</a></li>
           <li><a href="index.html#about">Sobre nosotros</a></li>
-          <li><a href="index.html#motos">Catalogo</a></li>
+          <li><a href="catalog3.html">Catalogo</a></li>
           <li><a href="index.html#mapa">¿Donde estamos?</a></li>
           <li><a href="index.html#contact">Contactanos</a></li>
         </ul>
@@ -176,14 +176,18 @@
 
         <div class="form-container">
           <h2>Contactanos</h2>
-          <input type="text" placeholder="Nombre" />
-          <input type="email" placeholder="E-Mail" />
+          <form action="send-email.php" method="post">
+            <input type="name" placeholder="Nombre" required/>
+          <input type="email" placeholder="E-Mail" required/>
           <textarea
+            name="message"
             cols="30"
             rows="6"
             placeholder="Escribinos"
+            required
           ></textarea>
-          <a href="#" class="btn btn-primary">Enviar</a>
+          </form>
+          <button class="btn btn-primary">Enviar</button>
         </div>
       </div>
     </section>
