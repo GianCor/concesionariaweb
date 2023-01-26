@@ -59,6 +59,10 @@ body {
   transform: scale(1.1);
 }
 
+.filter{
+  display: none;
+}
+
 .btn {
   display: inline-block;
   padding: 0.5em 1.5em;
@@ -854,7 +858,7 @@ body {
 .category_list .category_item{
 	display: block;
 	width: 90%;
-	padding: 15px 0;
+	padding: 12px 0;
 	margin-bottom: 20px;
 	background: #a3a3a3;
   transition: all;
@@ -950,6 +954,33 @@ body {
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
+}
+
+/* Modal */
+
+.modal{
+  padding: 1em;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.close-button{
+  padding: 10px;
+  border-radius: 10px;
+  transition: 1s;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.171);
+  text-transform:initial;
+  max-width: 100px;
+}
+
+.close-button:hover{
+  border-radius: 15px;
+  background-color: rgba(255, 0, 0, 0.603);
+  color: white;
 }
 
 /* RESPONSIVE */

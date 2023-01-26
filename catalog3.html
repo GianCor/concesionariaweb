@@ -24,8 +24,6 @@
       href="https://unpkg.com/aos@2.3.1/dist/aos.css"
       rel="stylesheet">
   </head>
-  <script src="js/jquery-3.2.1.js"></script>
-	      <script src="js/script.js"></script>
   <body>
 
     <nav class="navbar">
@@ -50,6 +48,7 @@
     <section class="catalogo">
               <div class="store-wrapper">
                 <div class="category_list">
+                  <input type="search" class="buscador" id="buscador" name="buscador" placeholder="Buscar...">
                   <a href="#" class="category_item" category="all">Todo</a>
                   <a href="#" class="category_item" category="honda">Honda</a>
                   <a href="#" class="category_item" category="guerrero">Guerrero</a>
@@ -57,15 +56,16 @@
                   <a href="#" class="category_item" category="motomel">Motomel</a>
                   <a href="#" class="category_item" category="keller">Keller</a>
                   <a href="#" class="category_item" category="benelli">Benelli</a>
+                  <a href="#" class="category_item" category="bajaj">Bajaj</a>
                 </div>
                 <section class="products-list">
                   <div class="product-item" category="bajaj">
                     <img src="Assets/Catalogo/Bajaj V15 150.jpg" alt="" >
-                    <a href="#">Bajaj 150 V15</a>
+                    <a class="chirola" href="#">Bajaj 150 V15</a>
                   </div>
                   <div class="product-item" category="bajaj">
                     <img src="Assets/Catalogo/Bajaj 200 NS200.jpg" alt="" >
-                    <a href="#">Bajaj 200 NS200</a>
+                    <a class="chirola" href="#">Bajaj 200 NS200</a>
                   </div>
                   <div class="product-item" category="bajaj">
                     <img src="Assets/Catalogo/Bajaj 250 Dominar.png" alt="" >
@@ -181,4 +181,15 @@
                   </div>
                 </section>
           </div>
+          <button class="btn open-button">Abrir</button>
+          <dialog class="modal" id="modal">
+            <h2>Contactanos para saber mas sobre tu nueva moto.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis neque alias quis tempore illo omnis, nulla ad facere 
+              quaerat, dolores, quos dolorem? Quo aliquid eum laboriosam est asperiores saepe porro!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis neque alias quis tempore illo omnis, nulla ad facere 
+                quaerat, dolores, quos dolorem? Quo aliquid eum laboriosam est asperiores saepe porro!</p>
+            <button class="btn close-button">Cerrar</button>
+            </dialog>
   </body>
+  <script src="js/jquery-3.2.1.js"></script>
+	      <script src="js/script.js"></script>

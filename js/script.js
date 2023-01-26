@@ -1,3 +1,13 @@
+document.addEventListener('keyup', e=>{
+	if(e.target.matches('#buscador')){
+		document.querySelectorAll('.chirola').forEach(articulo =>{
+			articulo.textContent.toLowerCase().includes(e.target.value)
+			? articulo.classList.add('.filter')
+			: articulo.classList.remove('.filter')
+		})
+	}
+})
+
 $(document).ready(function(){
 
 	// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE ====================
@@ -35,3 +45,19 @@ $(document).ready(function(){
 		} setTimeout(showAll, 400);
 	});
 });
+
+const modal = document.querySelector('#modal')
+const openModal = document.querySelectorAll('.product-item')
+const closeModal = document.querySelector('.close-button')
+
+
+for(let i = 0; i<openModal.length; i++){
+	openModal[i].addEventListener('click', () =>{
+		modal.showModal();
+	})
+}
+
+closeModal.addEventListener('click', () =>{
+	modal.close();
+})
+
