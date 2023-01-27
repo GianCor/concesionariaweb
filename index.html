@@ -23,6 +23,7 @@
     <link 
       href="https://unpkg.com/aos@2.3.1/dist/aos.css"
       rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
   <body>
 
@@ -187,23 +188,22 @@
 
         <div class="form-container">
           <h2>Contactanos</h2>
-          <form action="send-email.php" method="post">
+          <form action="https://formsubmit.co/f7a748b23a0805217d3241830a132ffc" method="POST" class="form-contact">
             <label for="name">Nombre</label>
-            <input type="name" placeholder="Escribe tu nombre" required/>
+            <input type="name" name="name" placeholder="Escribe tu nombre" required/>
             <label for="email">Email</label>
-          <input type="email" placeholder="Escribe tu email" required/>
-          <label for="subject">Asunto</label>
-          <input type="subject" placeholder="Escribe el motivo de tu mensaje" required/>
-          <label for="message">Mensaje</label>
-          <textarea
-            name="message"
-            cols="30"
-            rows="6"
-            placeholder="Cuentanos mas..."
-            required
-          ></textarea>
+            <input type="email" name="name" placeholder="Escribe tu email" required/>
+            <label for="message">Mensaje</label>
+            <textarea
+              name="message"
+              cols="30"
+              rows="6"
+              placeholder="Cuentanos mas..."
+              required
+            ></textarea>
+            <button id="submit" type="submit" name="send" class="btn btn-primary">Enviar</button>
           </form>
-          <button class="btn btn-primary">Enviar</button>
+          
         </div>
       </div>
     </section>
@@ -214,7 +214,7 @@
   </body>
   <!-- 
     .................../ JS Code for smooth scrolling /...................... -->
-
+  <script src="js/mailer.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script>
