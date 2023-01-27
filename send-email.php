@@ -1,20 +1,36 @@
+<?php 
+  use PHPMailer\PHPMailer\PHPMailer;
+  use PHPMailer\PHPMailer\Exception;
 
-<?php
- $name = $_POST["name"];
+  require 'phpmailer/src/Exception.php'
+  require 'phpmailer/src/PHPMailer'
+  require 'phpmailer/src/SMTP.php'
 
- $email = $_POST["email"];
+  if(isset($_POST["send"])){
+    $mail = new PHPMailer(true);
 
- $message = $_POST["message"];
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAut = true;
+    $mail->Username = 'crecermailer@gmail.com';
+    $mail->Password = 'mabdjqbhdlxxtcmc';
+    $mail->Port = 465;
 
- 
+    $mail->setFrom('crecermailer@gmail.com')
+    
+    $mail->addAddress($_POST["email"]);
 
- if (!$name AND !$email AND !$message){
+    $mail->isHTML(true);
+    $mail->Subject = $_POST["subject"];
+    $mail->Body = $_POST["message"];
+    $mail->send();
 
- 
-
-   header("Location: contacto.php?msg=off");
-
-   return false;
-
- }
- ?>
+    echo
+    "
+    <script>
+      alert('Enviado!');
+      document.location.href = 'index.html'
+    </script>
+    "
+  }
+?>
