@@ -1,13 +1,3 @@
-document.addEventListener('keyup', e=>{
-	if(e.target.matches('#buscador')){
-		document.querySelectorAll('.chirola').forEach(articulo =>{
-			articulo.textContent.toLowerCase().includes(e.target.value)
-			? articulo.classList.add('.filter')
-			: articulo.classList.remove('.filter')
-		})
-	}
-})
-
 $(document).ready(function(){
 
 	// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE ====================

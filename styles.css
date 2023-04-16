@@ -35,12 +35,13 @@ body {
 .category_list{
   display: flex;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 5px;
   height: 100%;
 }
 
 .category_list a{
-  border-radius: 10px;
+  margin-top: -5px;
+  border-radius: 5px;
 }
 
 .product-item{
@@ -223,13 +224,20 @@ body {
 #about {
   padding: 50px 0;
   background: #f5f5f7;
+  box-shadow: 10px 0px 32px 0px rgba(31, 38, 135, 0.37);
+  width: 90%;
+  margin: auto;
 }
 
 .about-wrapper {
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
 
+.about-img-3{
+  width: 60rem;
+  margin: 0 auto;
+  border-radius: 20px;
 }
 
 #about h2 {
@@ -239,6 +247,12 @@ body {
 #about p {
   font-size: 1.2rem;
   color: #555;
+}
+
+.about-p {
+  text-align: center;
+  margin: 2% 10% 0% 10%;
+
 }
 
 #about .small {
@@ -537,6 +551,7 @@ body {
 @media (max-width: 768px) {
   .navbar {
     opacity: 0.95;
+    display: block;
   }
 
 
